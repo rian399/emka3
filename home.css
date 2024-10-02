@@ -1,0 +1,235 @@
+:root{
+    --primary-color:darkblue ;
+}
+
+*{
+    font-family: 'Poppins' sans-serif;
+}
+
+body{
+    background-color: #bcb5b3;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .kotak {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 1518px;
+    height: 6rem;
+}
+
+.navbar .kotak img {
+    width: 55px;
+}
+
+.navbar .kotak h1 {
+    margin: 0;
+    color: black;
+    font-size: 35px;
+    align-items: start;
+    position: relative;
+}
+
+.navbar .kotak ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 6.5rem;
+}
+
+.navbar .kotak ul li{
+    margin: 0;
+    font-size: 19px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    transition: var(--primary-color);
+}
+
+.navbar .kotak ul li a:hover{
+    color: var(--primary-color);
+}
+
+
+.hero{
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 80px;
+    padding-bottom:50px;
+}
+
+.hero img{
+    width: 60%;
+    padding: 100px;
+}
+
+.hero h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.hero h3::after{
+    content: '';
+    display: block;
+    margin-top: 0.5rem;
+    width: 100px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.hero p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.hero-dua {
+    padding-top: 0;
+    padding-right: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-dua .list-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-dua img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.hero-dua .list-card h4 {
+    margin: 0 0 10px 0;
+    padding-top: 300px;
+    margin-right: -150px;
+    font-size: 17px;
+}
+
+.hero-dua .list-card p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    margin-right: 70px;
+    padding-top: 60px;
+}
+
+.container{
+    background-color: #3a3a3a;
+    color: white;
+    text-align: center;
+    height: 1.5rem;
+    width: 1454px;
+    font-size: 25px;
+    padding: 32px;
+    
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: #bcb5b3;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        margin: 0;
+        padding: 0;
+        width: 10%;
+    }
+
+    .navbar .kotak {
+        flex-direction: column;
+        height: auto;
+        width: 380px;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .navbar .kotak img {
+        width: 30px;
+        margin-left: -250px;
+        margin-top: -58px;
+        position: absolute;
+    }
+
+    .navbar .kotak h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .navbar .kotak ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .navbar .kotak ul li {
+        font-size: 16px;
+    }
+
+    .hero {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .hero h3 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-dua {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .hero-dua img {
+        width: 100px;
+        height: auto;
+    }
+
+    .hero-dua .list-card p {
+        font-size: 16px;
+        text-align: center;
+        padding-top: 20px;
+        margin-right: 0;
+    }
+
+    .hero-dua .list-card h4 {
+        font-size: 14px;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .container {
+        width: 390px;
+        font-size: 16px;
+        padding: 16px;
+    }
+}
+

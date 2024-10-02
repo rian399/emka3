@@ -1,0 +1,239 @@
+:root{
+    --primary-color:darkblue ;
+}
+
+*{
+    font-family: 'Poppins' sans-serif;
+}
+
+body{
+    background-color: #bcb5b3;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .kotak {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 1518px;
+    height: 6rem;
+}
+
+.navbar .kotak img {
+    width: 55px;
+}
+
+.navbar .kotak h1 {
+    margin: 0;
+    color: black;
+    font-size: 35px;
+    align-items: start;
+    position: relative;
+}
+
+.navbar .kotak ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 6.5rem;
+}
+
+.navbar .kotak ul li{
+    margin: 0;
+    font-size: 19px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    transition: var(--primary-color);
+}
+
+.navbar .kotak ul li a:hover{
+    color: var(--primary-color);
+}
+
+.artist {
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 160px;
+    padding-bottom:50px;
+}
+
+.artist h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.artist h3::after {
+    content: '';
+    display: block;
+    margin-top: 0 5rem;
+    width: 100px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+  .artists-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.artists-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.artist-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    .artist-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .artist-card {
+        width: 100%; 
+    }
+}
+
+.artist-card img {
+    width: 100%;
+    height: auto;
+}
+
+.artist-info {
+    padding: 30px;
+}
+
+.artist-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.artist-info p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f4f4f4;
+}
+
+.container{
+    background-color: #3a3a3a;
+    text-align: center;
+    color: #f4f4f4;
+    height: 1.5rem;
+    width: 95.8%;
+    font-size: 25px;
+    padding: 32px;   
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: #bcb5b3;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        margin: 0;
+        padding: 0;
+        width: 300px;
+    }
+
+    .navbar .kotak {
+        flex-direction: column;
+        height: auto;
+        width: 400px;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .navbar .kotak img {
+        width: 30px;
+        margin-left: -250px;
+        margin-top: -58px;
+        position: absolute;
+    }
+
+    .navbar .kotak h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .navbar .kotak ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .navbar .kotak ul li {
+        font-size: 16px;
+    } 
+
+    .artists-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .artist-card {
+        width: 80%; /* Kartu seniman memenuhi seluruh lebar layar */
+    }
+
+    .artist-info {
+        padding: 20px; /* Kurangi padding agar lebih sesuai dengan layar kecil */
+    }
+
+    .artist-info h2 {
+        font-size: 1.3rem;
+    }
+
+    .artist-info p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .container {
+        width: 408px;
+        font-size: 16px;
+        padding: 16px;
+    }
+}

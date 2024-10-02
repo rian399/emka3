@@ -1,0 +1,205 @@
+:root{
+    --primary-color:darkblue ;
+}
+
+*{
+    font-family: 'Poppins' sans-serif;
+}
+
+body{
+    background-color: #bcb5b3;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    transition: var(--primary-color);
+}
+
+.navbar{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .kotak {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 1518px;
+    height: 6rem;
+}
+
+.navbar .kotak img {
+    width: 55px;
+}
+
+.navbar .kotak h1 {
+    margin: 0;
+    color: black;
+    font-size: 35px;
+    align-items: start;
+    position: relative;
+}
+
+.navbar .kotak ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 6.5rem;
+}
+
+.navbar .kotak ul li{
+    margin: 0;
+    font-size: 19px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    transition: var(--primary-color);
+}
+
+.navbar .kotak ul li a:hover{
+    color: var(--primary-color);
+}
+
+.art-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.art-image {
+    flex: 1;
+    margin-right: 50px;
+}
+
+.art-image img {
+    width: 700px;
+    border: 10px solid #4e4e4e;
+}
+
+.art-details {
+    flex: 1;
+    max-width: 400px;
+}
+
+.art-details h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.art-details h2 {
+    font-size: 1.6rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.art-details p {
+    margin: 5px 0;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.container{
+    background-color: #3a3a3a;
+    color: white;
+    text-align: center;
+    height: 1.5rem;
+    width: 95.8%;
+    font-size: 25px;
+    padding: 32px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: #bcb5b3;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        margin: 0;
+        padding: 0;
+        width: 300px;
+    }
+
+    .navbar .kotak {
+        flex-direction: column;
+        height: auto;
+        width: 400px;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .navbar .kotak img {
+        width: 30px;
+        margin-left: -250px;
+        margin-top: -58px;
+        position: absolute;
+    }
+
+    .navbar .kotak h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .navbar .kotak ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .navbar .kotak ul li {
+        font-size: 16px;
+    } 
+
+    .art-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .art-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .art-image img {
+        width: 100%;
+        max-width: 350px;
+        border: 5px solid #4e4e4e;
+    }
+
+    .art-details {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .art-details h1 {
+        font-size: 2rem;
+    }
+
+    .art-details h2 {
+        font-size: 1.4rem;
+    }
+
+    .art-details p {
+        font-size: 15px;
+    }
+
+    .container {
+        width: 408px;
+        font-size: 16px;
+        padding: 16px;
+    }
+}
